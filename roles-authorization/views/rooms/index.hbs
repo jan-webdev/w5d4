@@ -1,10 +1,14 @@
 <h1>All rooms</h1>
+<ul>
 {{#each roomsList}}
+<li>
 <a href="/rooms/{{_id}}">
-  <p>Name: {{name}} Price: {{price}}</p>
+  <p>Name: {{name}} 
+    <br />
+    Price: {{price}}</p>
 </a>
-
-{{/each}}
+</li>
+{{/each}}</ul>
 <h4>
   <a href="/rooms/add">Add a room</a>
 </h4>

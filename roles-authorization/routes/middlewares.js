@@ -9,6 +9,6 @@ const loginCheck = () => {
 }
 
 
-modules.exports = {
+module.exports = {
   loginCheck: loginCheck
 }

@@ -42,7 +42,7 @@ router.post('/', (req, res, next) => {
     price,
     name,
     description,
-    owner req.user._id // in req.user parkt passport die IDs // wenn es basic auth wäre wäre es req.session.user
+    owner: req.user._id // in req.user parkt passport die IDs // wenn es basic auth wäre wäre es req.session.user
   })
     .then(room => {
       res.redirect('/rooms')
